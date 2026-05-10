@@ -48,7 +48,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground sm:text-xl"
           >
-            Enterprise AI Platform Architect · GenAI Systems · RAG · Multi-Agent Workflows
+            Enterprise AI Platform Engineering · GenAI Systems · RAG · Multi-Agent Workflows
           </motion.p>
 
           <motion.p

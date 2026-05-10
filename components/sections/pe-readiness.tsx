@@ -89,7 +89,7 @@ const JOURNEY = [
   { year: '2018–20', label: 'Product Dev', sub: 'Cognizant' },
   { year: '2020–24', label: 'Senior Engineer', sub: 'JPMorgan Chase' },
   { year: '2024–Now', label: 'AI Platform Engineering', sub: 'Wells Fargo', current: true },
-  { year: 'Next', label: 'Staff+ / Principal', sub: 'Platform Architecture Leadership', target: true },
+  { year: 'Next', label: 'Platform Architecture Leadership', sub: 'Staff+ / Principal scope', target: true },
 ];
 
 export function PeReadiness() {
