@@ -55,10 +55,11 @@ export default function ResumePage() {
           <h2 className="resume-section-title">Summary</h2>
           <p className="text-gray-700">
             Lead Software Engineer with 14+ years of experience building enterprise platforms across banking, commerce, and AI systems.
-            Currently focused on GenAI platform architecture and developer experience tooling — including RAG integrations,
+            Currently focused on GenAI platform engineering and developer experience tooling — including RAG integrations,
             multi-agent orchestration, MCP tooling, and AI-augmented SDLC workflows. Prior experience spans six years of progression from
-            developer to team lead at Skava, senior engineering at JPMorgan Chase, and early systems contributions dating to 2009.
-            Experienced across frontend, backend, platform engineering, and enterprise integration with strong focus on scalable architecture,
+            developer to team lead at Skava (e-commerce), product engineering at Intuit via Cognizant, senior engineering at JPMorgan Chase,
+            and early systems contributions dating to 2009.
+            Experienced across frontend, backend, platform engineering, and enterprise integration with strong focus on scalable design,
             developer enablement, and regulated environments.
           </p>
         </section>
@@ -99,10 +100,10 @@ export default function ResumePage() {
             period="Apr 2024 — Present"
             location="Bengaluru, India"
             bullets={[
-                'Architecting GenAI platform capabilities and developer experience tooling for internal engineering platforms — RAG integrations, evaluation harnesses, and governed LLM patterns for AI-augmented SDLC workflows.',
-                'Established org-wide GenAI engineering standards: MCP-tool patterns, A2A orchestration framework, and LLM evaluation workflows adopted across 4+ teams.',
+                'Designing GenAI platform capabilities and developer experience tooling for internal engineering platforms — RAG integrations, evaluation harnesses, and governed LLM patterns for AI-augmented SDLC workflows.',
+                'Established reusable GenAI engineering patterns: MCP-tool integration approaches, A2A orchestration framework, and LLM evaluation workflows adopted across multiple engineering teams.',
                 'Designed Agent-to-Agent (A2A) orchestration enabling deterministic, auditable multi-step AI workflow automation in regulated banking environments.',
-                'Led technical direction for internal AI developer platform adoption; principal technical reviewer and architecture escalation point.',
+                'Led technical direction for internal AI developer platform adoption; key technical reviewer and architecture escalation point.',
                 'Mentoring senior engineers on AI system design, platform engineering practices, and production LLM evaluation.',
             ]}
               tags={['RAG', 'Multi-Agent', 'MCP', 'Python', 'Java', 'TypeScript', 'Developer Platforms']}
@@ -124,15 +125,15 @@ export default function ResumePage() {
 
           <ResumeRole
             title="Associate — Product Developer"
-            company="Cognizant"
+            company="Cognizant · Client: Intuit"
             period="Sep 2018 — Dec 2019"
             location="India"
             bullets={[
-              'Led full-stack feature delivery on enterprise client engagements for global customers.',
+              'Full-stack product engineering on Intuit product workflows (TurboTax / QuickBooks ecosystem).',
               'Contributed to architectural decisions with onshore product and design leads.',
               'Established code review standards and quality practices improving team output velocity.',
             ]}
-            tags={['Java', 'JavaScript', 'Full Stack', 'Enterprise']}
+            tags={['Java', 'JavaScript', 'Full Stack', 'Fintech', 'Product Engineering']}
           />
 
           <ResumeRole
