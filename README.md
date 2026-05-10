@@ -6,7 +6,7 @@ Live site: [boopathisakthivel.github.io](https://boopathisakthivel.github.io)
 
 ## Tech stack
 
-- **Next.js 14** with the App Router (static export)
+- **Next.js 16** with the App Router (static export)
 - **TypeScript** for type safety
 - **Tailwind CSS** for styling
 - **shadcn/ui**-style component primitives
@@ -18,7 +18,7 @@ The site is a single-page experience composed of section components under `compo
 ## Local development
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 npm run dev
 ```
 
