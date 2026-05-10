@@ -119,7 +119,9 @@ export function AnimatedBackground() {
         ctx.fill();
       }
 
-      rafRef.current = requestAnimationFrame(tick);
+      if (!prefersReducedMotion) {
+        rafRef.current = requestAnimationFrame(tick);
+      }
     };
 
     resize();

@@ -88,7 +88,7 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="/resume" target="_blank" rel="noreferrer">
+              <a href="/resume/" target="_blank" rel="noreferrer">
                 <Download size={18} /> Download Resume
               </a>
             </Button>

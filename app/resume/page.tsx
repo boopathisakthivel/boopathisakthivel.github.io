@@ -38,8 +38,8 @@ export default function ResumePage() {
           </p>
           <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-xs text-gray-500">
             <span className="flex items-center gap-1"><MapPin size={11} /> Bengaluru, India</span>
-            <a href="mailto:boopathisakthivel@gmail.com" className="flex items-center gap-1 hover:text-indigo-600">
-              <Mail size={11} /> boopathisakthivel@gmail.com
+            <a href="mailto:boopathisakthivel.in@gmail.com" className="flex items-center gap-1 hover:text-indigo-600">
+              <Mail size={11} /> boopathisakthivel.in@gmail.com
             </a>
             <a href="https://www.linkedin.com/in/boopathisakthivel" className="flex items-center gap-1 hover:text-indigo-600">
               <Linkedin size={11} /> linkedin.com/in/boopathisakthivel
