@@ -1,17 +1,37 @@
 {
-  "name": "boopathisakthivel.github.io",
+  "name": "boopathisakthivel-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "docs": "gitbook build",
-    "docs-serve": "gitbook serve",
-    "docs-publish": "gh-pages -d _books -branch=master"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit"
   },
-  "repository": "https://github.com/boopathisakthivel/boopathisakthivel.github.io.git",
-  "author": "Boopathi Sakthivel <boopathisakthivel.in@gmail.com>",
-  "license": "MIT",
   "dependencies": {
-    "gh-pages": "^2.0.1",
-    "gitbook-cli": "^2.3.2"
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.10",
+    "lucide-react": "^0.453.0",
+    "next": "^16.2.6",
+    "next-themes": "^0.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.13",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.6",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
   }
 }
