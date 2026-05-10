@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Boopathi Sakthivel — AI Platform Engineering',
     description:
-      'Lead Software Engineer building GenAI systems, RAG platforms, and multi-agent workflows for financial services. Targeting Staff+ / Principal Engineering.',
+      'Lead Software Engineer building GenAI systems, RAG platforms, and multi-agent workflows for financial services.',
   },
 };
 
