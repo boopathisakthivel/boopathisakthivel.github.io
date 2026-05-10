@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, Sparkles, Github, Linkedin, MapPin } from 'lucide-react';
+import { ArrowRight, Mail, Sparkles, Github, Linkedin, MapPin, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
@@ -29,7 +29,7 @@ export function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
               </span>
-              Available for Principal Engineer roles
+              Available for Staff+ / Platform Architecture Roles
             </Badge>
           </motion.div>
 
@@ -48,8 +48,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground sm:text-xl"
           >
-            AI Application Engineering · RAG · Multi-Agent Systems · MCP Tools ·
-            Scalable AI Solutions
+            Enterprise AI Platform Architect · GenAI Systems · RAG · Multi-Agent Workflows
           </motion.p>
 
           <motion.p
@@ -58,7 +57,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.35 }}
             className="mt-4 font-display text-xl font-medium text-foreground/90 sm:text-2xl"
           >
-            13+ years building enterprise-grade software solutions
+            14+ years of enterprise platform engineering — banking systems, GenAI architecture, and technical leadership
           </motion.p>
 
           <motion.div
@@ -89,6 +88,11 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
+              <a href="/resume" target="_blank" rel="noreferrer">
+                <Download size={18} /> Download Resume
+              </a>
+            </Button>
+            <Button asChild variant="ghost" size="lg">
               <a href="#contact">
                 <Mail size={18} /> Contact Me
               </a>

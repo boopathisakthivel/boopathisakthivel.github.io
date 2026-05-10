@@ -23,7 +23,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: 'Boopathi Sakthivel — AI Application Engineering | Principal Engineer',
   description:
-    '13+ years building enterprise-grade software solutions. Specialising in RAG, multi-agent systems, MCP tools, and scalable AI applications across financial services.',
+    '14+ years building enterprise-grade software solutions. Specialising in RAG, multi-agent systems, MCP tools, and scalable AI applications across financial services.',
   keywords: [
     'Boopathi Sakthivel',
     'Principal Engineer',
@@ -42,10 +42,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Boopathi Sakthivel — AI Application Engineering',
     description:
-      '13+ years building enterprise-grade software solutions. RAG, multi-agent systems, MCP tools, and scalable AI applications.',
+      '14+ years building enterprise-grade software solutions. RAG, multi-agent systems, MCP tools, and scalable AI applications.',
     type: 'website',
     url: 'https://boopathisakthivel.github.io',
     siteName: 'Boopathi Sakthivel',
+  },
+  icons: {
+    icon: '/favicon.svg',
   },
   twitter: {
     card: 'summary_large_image',

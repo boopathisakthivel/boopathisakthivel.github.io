@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const NAV_ITEMS: { label: string; href: string }[] = [
@@ -89,6 +89,14 @@ export function Navbar() {
               <span className="relative">{item.label}</span>
             </a>
           ))}
+          <a
+            href="/resume"
+            target="_blank"
+            rel="noreferrer"
+            className="ml-2 inline-flex items-center gap-1.5 rounded-md border border-white/15 bg-white/[0.04] px-3 py-1.5 text-sm font-medium text-foreground/80 transition-colors hover:border-white/30 hover:text-foreground"
+          >
+            <Download size={13} /> Resume
+          </a>
         </nav>
 
         <button
@@ -119,6 +127,15 @@ export function Navbar() {
                   {item.label}
                 </a>
               ))}
+              <a
+                href="/resume"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setOpen(false)}
+                className="mt-1 inline-flex items-center gap-2 rounded-md border border-white/15 px-3 py-2 text-sm font-medium text-foreground/90 hover:bg-white/[0.06]"
+              >
+                <Download size={14} /> Download Resume
+              </a>
             </nav>
           </motion.div>
         )}

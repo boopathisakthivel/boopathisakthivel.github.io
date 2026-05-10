@@ -10,13 +10,13 @@ const EDUCATION = [
     degree: 'M.Phil in Computer Science',
     period: '2015 — 2017',
     description:
-      'Advanced study in computer science with a research orientation, deepening foundations in algorithms, software engineering and applied computing.',
+      'Advanced postgraduate study in computer science focused on software architecture, applied computing, and engineering foundations alongside ongoing industry experience.',
   },
   {
-    degree: "Master's in Computer Programming",
+    degree: 'Master of Computer Applications (MCA)',
     period: '2009 — 2012',
     description:
-      "Master's-level programme covering programming, software design and systems — the launchpad for a 13+ year engineering career.",
+      "Master's-level programme covering software engineering, systems programming, databases, and enterprise application development. During this period, contributed real software to the college examination department — building exam scheduling, student record management, and result-processing tools used by the institution. The first end-to-end systems ownership experience that shaped a 14-year engineering career.",
   },
 ];
 
@@ -31,7 +31,7 @@ export function Education() {
               Academic <span className="text-gradient">foundation</span>
             </>
           }
-          description="Formal training in computer science and programming, supporting a career built on continuous learning."
+          description="Formal training in computer science and programming — anchored by real systems work during college that set the stage for 14+ years of engineering practice."
         />
 
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">

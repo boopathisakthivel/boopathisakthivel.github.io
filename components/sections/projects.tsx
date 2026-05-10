@@ -21,13 +21,8 @@ const PROJECTS: Project[] = [
   {
     title: 'Enterprise RAG Platform',
     category: 'GenAI · RAG',
-    description:
-      'Production-grade Retrieval-Augmented Generation platform for banking knowledge workflows — combining hybrid retrieval, evaluation harnesses, and guardrails for regulated content.',
-    outcomes: [
-      'Scaled retrieval over millions of internal documents',
-      'Reduced grounding errors via hybrid search and re-ranking',
-      'Standardised evaluation across multiple LLM backends',
-    ],
+    description: 'RAG-powered developer tooling for internal engineering platforms — governed LLM integrations, evaluation pipelines, and reusable patterns for AI-augmented SDLC workflows.',
+    outcomes: ['Evaluation harnesses and guardrails for governed LLM grounding', 'Reusable RAG patterns enabling consistent AI integration across teams'],
     tags: ['RAG', 'Vector Search', 'LLM Eval', 'Java', 'Python'],
     icon: Brain,
     accent: 'from-fuchsia-500/20 to-purple-500/20',
@@ -35,13 +30,8 @@ const PROJECTS: Project[] = [
   {
     title: 'Multi-Agent Workflow Orchestrator',
     category: 'GenAI · Agents',
-    description:
-      'Agent-to-agent (A2A) orchestration framework with planner / executor / critic loops, tool routing, and observability — used to automate multi-step internal workflows.',
-    outcomes: [
-      'Encoded SOPs as agent graphs with deterministic fallbacks',
-      'Pluggable tool registry for safe enterprise integrations',
-      'Transparent traces for debugging and audit',
-    ],
+    description: 'A2A agent orchestration with planner/executor/critic loops, observability, and governance for regulated workflows.',
+    outcomes: ['Agent graphs with deterministic fallbacks and audit logging', 'Pluggable, governed tool registry with schema enforcement'],
     tags: ['Multi-Agent', 'A2A', 'ADK', 'Orchestration', 'Observability'],
     icon: Bot,
     accent: 'from-purple-500/20 to-blue-500/20',
@@ -49,13 +39,8 @@ const PROJECTS: Project[] = [
   {
     title: 'MCP Tool Suite for Enterprise Apps',
     category: 'GenAI · Tooling',
-    description:
-      'Set of Model Context Protocol (MCP) servers exposing internal data sources and back-office systems as first-class tools for any MCP-compatible LLM client.',
-    outcomes: [
-      'Standardised LLM access to enterprise systems via MCP',
-      'Built reusable patterns for auth, schema and rate-limiting',
-      'Cut integration time for new agent use-cases significantly',
-    ],
+    description: 'MCP servers exposing internal banking systems as safe, governed LLM tools with reusable auth and schema patterns.',
+    outcomes: ['Standardised tool access patterns adopted across AI integrations', 'Reusable auth, schema validation, and rate-limiting abstractions'],
     tags: ['MCP', 'Tools', 'TypeScript', 'API Design', 'Integrations'],
     icon: Wrench,
     accent: 'from-blue-500/20 to-cyan-500/20',
@@ -77,13 +62,8 @@ const PROJECTS: Project[] = [
   {
     title: 'Commerce Platform Modules',
     category: 'Commerce · Leadership',
-    description:
-      'Owned modules of the Skava commerce platform serving global retail brands — progressed from developer to component, integration and team lead across releases.',
-    outcomes: [
-      'Delivered platform features used by Tier-1 retailers',
-      'Led integrations with partner systems and clients',
-      'Mentored engineers and set delivery practices',
-    ],
+    description: 'Commerce platform modules — component & integration ownership.',
+    outcomes: ['Delivered modules used by Tier-1 retailers', 'Led integrations and mentoring'],
     tags: ['JavaScript', 'Node.js', 'Java', 'Commerce', 'Leadership'],
     icon: Search,
     accent: 'from-emerald-500/20 to-cyan-500/20',
@@ -91,13 +71,8 @@ const PROJECTS: Project[] = [
   {
     title: 'AI Chatbot & Knowledge Apps',
     category: 'GenAI · Knowledge',
-    description:
-      'Earlier work on chatbot and documentation experiences — including a Dialogflow-powered AI Chatbot and a static knowledge portal with full-text search.',
-    outcomes: [
-      'Built NLU-driven chatbot for support workflows',
-      'Designed search index with stemmed token store',
-      'Hands-on experience that informs current GenAI work',
-    ],
+    description: 'Chatbot and knowledge apps (earlier work informing current GenAI systems).',
+    outcomes: ['NLU chatbot for support', 'Search-backed knowledge portal'],
     tags: ['NLU', 'Dialogflow', 'Search', 'JavaScript'],
     icon: Brain,
     accent: 'from-fuchsia-500/20 to-blue-500/20',
@@ -119,7 +94,7 @@ export function Projects() {
               Selected <span className="text-gradient">work</span>
             </>
           }
-          description="A snapshot of GenAI, platform and financial-services work — focused on production-grade systems, not toys."
+          description="A snapshot of GenAI platform, financial services, and enterprise engineering work — focused on production-grade enterprise systems."
         />
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">

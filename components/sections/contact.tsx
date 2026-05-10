@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Linkedin, Github, ArrowRight } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github, ArrowRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { SectionHeading } from '@/components/section-heading';
@@ -14,14 +14,6 @@ const CONTACTS = [
     href: 'mailto:boopathisakthivel.in@gmail.com',
     accent: 'from-fuchsia-500/20 to-purple-500/20',
     iconColor: 'text-fuchsia-300',
-  },
-  {
-    icon: Phone,
-    label: 'Phone',
-    value: '+91 89405 00755',
-    href: 'tel:+918940500755',
-    accent: 'from-purple-500/20 to-blue-500/20',
-    iconColor: 'text-purple-300',
   },
   {
     icon: Linkedin,
@@ -53,7 +45,7 @@ export function Contact() {
               <span className="text-gradient">intelligent</span>
             </>
           }
-          description="Open to Principal Engineer opportunities, AI platform leadership roles, and high-impact GenAI engagements."
+          description="Open to Staff+ Engineering, AI Platform Architecture, and Technical Leadership opportunities — reach out via email or LinkedIn."
         />
 
         <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-5">
@@ -134,7 +126,7 @@ export function Contact() {
                 Based in Bengaluru
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Prestige Tech Park II, Kadubeesanahalli
+                Embassy Tech Village, Devarabeesanahalli
                 <br />
                 Bengaluru, Karnataka, India
               </p>

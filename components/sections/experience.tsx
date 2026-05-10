@@ -20,73 +20,79 @@ type Role = {
 const ROLES: Role[] = [
   {
     company: 'Wells Fargo',
-    title: 'Lead Software Engineer',
+    title: 'Lead Software Engineer — AI Platform',
     period: 'Apr 2024 — Present',
     location: 'Bengaluru, India',
     current: true,
-    description:
-      'Leading AI application engineering for enterprise banking platforms — designing RAG systems, multi-agent workflows and MCP-based tool integrations on top of regulated infrastructure.',
+    description: 'Leading GenAI platform architecture and developer experience tooling for internal engineering platforms — RAG integrations, agent orchestration, MCP tooling patterns, and AI-augmented SDLC workflows.',
     highlights: [
-      'Architecting RAG and multi-agent solutions for banking workflows',
-      'Driving GenAI platform patterns and MCP-tool standards across teams',
-      'Mentoring engineers on LLM application development and evaluation',
+      'Designed reusable RAG and AI workflow patterns for internal developer tooling, adopted across multiple engineering teams',
+      'Standardised MCP integration approaches enabling governed LLM access across internal platforms',
+      'Built auditable A2A orchestration workflows improving AI-augmented SDLC developer experience',
     ],
-    tags: ['RAG', 'Multi-Agent', 'MCP', 'Enterprise AI', 'Java', 'JavaScript'],
+    tags: ['RAG', 'Multi-Agent', 'MCP', 'Platform Architecture', 'GenAI', 'Java', 'TypeScript'],
   },
   {
     company: 'JPMorgan Chase & Co.',
     title: 'Software Developer III',
     period: 'Jan 2020 — Apr 2024',
     location: 'Bengaluru, India',
-    description:
-      'Built and scaled mission-critical financial services applications — owning components and integrations across modern web and Java backends in a global engineering organisation.',
+    description: 'Owned high-throughput banking services and cross-team integration contracts supporting product, compliance, and risk workflows — with focus on API governance, resiliency, and observability.',
     highlights: [
-      'Delivered features on high-throughput banking systems used by millions',
-      'Owned end-to-end design for key components and service integrations',
-      'Collaborated with global teams across product, risk and compliance',
+      'Defined API and data contracts adopted across product, risk & compliance teams',
+      'Improved service reliability, observability, and operational resilience for microservices',
+      'Led integration ownership and troubleshooting across distributed banking systems',
     ],
-    tags: ['Java', 'Spring Boot', 'JavaScript', 'Microservices', 'REST APIs'],
+    tags: ['Java', 'Spring Boot', 'Microservices', 'System Design', 'API Contracts', 'Reliability'],
   },
   {
     company: 'Cognizant',
     title: 'Associate — Product Developer',
     period: 'Sep 2018 — Dec 2019',
     location: 'India',
-    description:
-      'Worked as a product developer on enterprise client engagements, contributing to full-stack delivery for large global customers.',
+    description: 'Full-stack delivery for enterprise clients; focused on quality and architecture.',
     highlights: [
-      'Implemented features across full-stack web applications',
-      'Collaborated with onshore product and design teams',
-      'Improved code quality and review practices on the team',
+      'Led full-stack feature delivery for global clients',
+      'Introduced code-review and quality practices',
     ],
-    tags: ['Java', 'JavaScript', 'Full Stack', 'Enterprise'],
+    tags: ['Java', 'JavaScript', 'Full Stack', 'Enterprise', 'Architecture'],
   },
   {
     company: 'Skava',
-    title: 'Lead Developer',
+    title: 'Lead Developer (Developer → Team Lead)',
     period: 'Sep 2012 — Aug 2018',
     location: 'Chennai, India',
-    description:
-      'Grew from developer to component lead, integration lead and team lead — owning increasing scope on commerce platform components used by global retail brands.',
+    description: '6-year progression on a global commerce platform — component & integration ownership.',
     highlights: [
-      'Progression: Developer → Component Lead → Integration Lead → Team Lead',
-      'Owned modules of the Skava commerce platform across releases',
-      'Led a small team and mentored junior engineers',
+      'Owned core commerce modules used by global retailers',
+      'Led integrations, mentoring and hiring',
+      'Defined component contracts across releases',
     ],
-    tags: ['JavaScript', 'Node.js', 'Java', 'Commerce', 'Leadership'],
+    tags: ['JavaScript', 'Node.js', 'Java', 'Platform Engineering', 'Team Leadership', 'Commerce'],
   },
   {
     company: 'INPOTech',
-    title: 'Intern',
+    title: 'Software Engineering Intern',
     period: 'Nov 2011 — Jul 2012',
-    location: 'India',
-    description:
-      'First professional engineering experience — building software fundamentals and shipping features as part of a small product team.',
+    location: 'Coimbatore, India',
+    description: 'Internship at Coimbatore product startup — first production engineering experience.',
     highlights: [
-      'Contributed to in-house product development',
-      'Learned production engineering practices on a small team',
+      'Shipped features in a small product team',
+      'Learned production engineering practices',
     ],
-    tags: ['Java', 'Web', 'Foundations'],
+    tags: ['Java', 'Web Development', 'Product Startup', 'Coimbatore'],
+  },
+  {
+    company: 'College Examination Department',
+    title: 'Student Developer (Academic Contribution)',
+    period: '2009 — 2011',
+    location: 'College, India',
+    description: 'Student developer — built exam scheduling and result-processing tools used by the college.',
+    highlights: [
+      'Delivered exam scheduling and student record tools',
+      'First end-to-end systems ownership',
+    ],
+    tags: ['Systems Design', 'Java', 'Academic', 'Early Career'],
   },
 ];
 
@@ -98,11 +104,11 @@ export function Experience() {
           eyebrow="Experience"
           title={
             <>
-              13+ years across{' '}
-              <span className="text-gradient">global engineering</span>
+              Engineering{' '}
+              <span className="text-gradient">career history</span>
             </>
           }
-          description="A career spanning product, commerce and financial services — with steady progression from developer into engineering leadership."
+          description="From college-era systems contributions and a Coimbatore startup, through six years at Skava and global financial institutions, to architecting AI platforms at Wells Fargo — consistent progression toward architectural ownership and technical leadership."
         />
 
         <div className="relative mx-auto max-w-5xl">

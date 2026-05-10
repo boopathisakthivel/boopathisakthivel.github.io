@@ -8,33 +8,29 @@ import { SectionHeading } from '@/components/section-heading';
 const HIGHLIGHTS = [
   {
     icon: Brain,
-    title: 'AI Application Development',
-    description:
-      'Designing and shipping production-grade RAG pipelines, multi-agent workflows, and MCP-tool integrations that turn LLMs into reliable enterprise systems.',
+    title: 'AI Platform Architecture',
+    description: 'RAG platforms · Agent orchestration · MCP patterns',
     accent: 'from-fuchsia-500/20 to-purple-500/20',
     iconColor: 'text-fuchsia-400',
   },
   {
     icon: Building2,
     title: 'Financial Services Domain',
-    description:
-      'Decade-plus career across global banking — Wells Fargo and JPMorgan Chase — translating regulatory, risk and high-throughput requirements into resilient software.',
+    description: '14+ years in banking — resilient, auditable systems',
     accent: 'from-blue-500/20 to-cyan-500/20',
     iconColor: 'text-blue-400',
   },
   {
     icon: Layers,
-    title: 'Full-Stack Engineering',
-    description:
-      'Polyglot engineer fluent in Java and JavaScript ecosystems, comfortable owning architecture from data layer to UI for high-scale enterprise applications.',
+    title: 'Systems Thinking at Scale',
+    description: 'Systems thinking: data, services, UI — API & contracts',
     accent: 'from-cyan-500/20 to-emerald-500/20',
     iconColor: 'text-cyan-400',
   },
   {
     icon: TrendingUp,
-    title: 'Engineering Leadership',
-    description:
-      'Career arc from developer to component lead, integration lead and team lead — coaching engineers, owning delivery, and driving technical direction.',
+    title: 'Architecture Leadership',
+    description: 'Platform scope: technical strategy, standards, and engineering enablement',
     accent: 'from-purple-500/20 to-fuchsia-500/20',
     iconColor: 'text-purple-400',
   },
@@ -48,10 +44,11 @@ export function About() {
           eyebrow="About"
           title={
             <>
-              Engineer turned <span className="text-gradient">AI builder</span>
+              Enterprise platform engineering,{' '}
+              <span className="text-gradient">AI systems depth</span>
             </>
           }
-          description="13+ years building enterprise-grade software in financial services — now focused on shipping AI applications that combine reasoning, retrieval, and tool use at scale."
+          description="Lead Software Engineer with 14+ years of experience building enterprise platforms across banking, commerce, and AI systems. Currently focused on GenAI platform architecture and developer experience tooling — RAG integrations, multi-agent orchestration, MCP tooling, and AI-augmented SDLC workflows. Experience spans frontend systems, backend services, developer platforms, and GenAI architectures — with a strong focus on scalable design, regulated environments, and engineering enablement."
         />
 
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
@@ -62,32 +59,48 @@ export function About() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-5"
           >
-            <Card className="h-full p-8">
-              <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
-                <p>
-                  I&apos;m a Lead Software Engineer at{' '}
-                  <span className="font-medium text-foreground">Wells Fargo</span>{' '}
-                  with over a decade of experience designing and delivering
-                  enterprise software at global financial institutions.
-                </p>
-                <p>
-                  My current focus is the intersection of{' '}
-                  <span className="font-medium text-foreground">
-                    GenAI engineering and platform engineering
-                  </span>{' '}
-                  — building Retrieval-Augmented Generation systems, multi-agent
-                  workflows, and MCP-based tool integrations that bring LLM
-                  capabilities into regulated, high-stakes environments.
-                </p>
-                <p>
-                  Across stints at Wells Fargo, JPMorgan Chase, Cognizant and
-                  Skava, I&apos;ve grown from developer to lead — owning
-                  components, integrations and ultimately full delivery streams
-                  for some of the largest enterprises in banking and commerce.
-                </p>
-                <p className="text-foreground">
-                  Targeting <span className="text-gradient font-medium">Principal Engineer</span> roles where I can shape AI platform strategy and ship production-grade GenAI systems.
-                </p>
+            <Card className="h-full p-6 flex flex-col gap-5">
+              {/* Role */}
+              <div>
+                <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Current Role</div>
+                <div className="font-display text-lg font-semibold text-foreground">Lead Software Engineer</div>
+                <div className="text-sm text-muted-foreground">Wells Fargo · AI Platform · Bengaluru</div>
+              </div>
+
+              {/* Domains */}
+              <div>
+                <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-2">Domains</div>
+                <div className="flex flex-wrap gap-1.5">
+                  {['GenAI / RAG', 'Multi-Agent', 'MCP', 'Banking', 'Platform Arch'].map((d) => (
+                    <span key={d} className="rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-0.5 text-xs text-foreground/80">{d}</span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Timeline snapshot */}
+              <div>
+                <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-2">Journey</div>
+                <div className="space-y-1.5 text-xs text-muted-foreground">
+                  {[
+                    { y: '2009–11', t: 'College exam systems (first ownership)' },
+                    { y: '2011–12', t: 'Startup internship · Coimbatore' },
+                    { y: '2012–18', t: 'Skava · Dev → Team Lead' },
+                    { y: '2020–24', t: 'JPMorgan Chase · Sr. Engineer' },
+                    { y: '2024 →', t: 'Wells Fargo · AI Platform' },
+                  ].map(({ y, t }) => (
+                    <div key={y} className="flex items-start gap-2">
+                      <span className="w-14 flex-none font-mono text-[10px] text-muted-foreground/60 pt-0.5">{y}</span>
+                      <span>{t}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Open to */}
+              <div className="mt-auto rounded-lg border border-fuchsia-500/20 bg-fuchsia-500/5 px-4 py-3">
+                <div className="text-[10px] uppercase tracking-widest text-fuchsia-400/70 mb-0.5">Open To</div>
+                <div className="font-display font-semibold text-gradient">Staff+ / Platform Architecture</div>
+                <div className="text-xs text-muted-foreground mt-0.5">Architecture ownership · Engineering enablement</div>
               </div>
             </Card>
           </motion.div>
@@ -127,10 +140,10 @@ export function About() {
           className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4"
         >
           {[
-            { value: '13+', label: 'Years of Experience' },
+            { value: '14+', label: 'Years of Experience' },
             { value: '5', label: 'Companies' },
             { value: '4', label: 'Leadership Roles' },
-            { value: '∞', label: 'Lines of Code' },
+            { value: '10+', label: 'Enterprise Systems' },
           ].map((s) => (
             <Card key={s.label} className="p-6 text-center">
               <div className="font-display text-3xl font-bold sm:text-4xl">

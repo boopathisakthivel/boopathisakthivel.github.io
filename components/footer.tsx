@@ -8,7 +8,8 @@ export function Footer() {
           <span className="font-display font-semibold text-foreground/90">
             Boopathi Sakthivel
           </span>{' '}
-          · AI Application Engineering · {new Date().getFullYear()}
+          · AI Platform Engineering · Enterprise Systems ·{' '}
+          <span suppressHydrationWarning>{new Date().getFullYear()}</span>
         </div>
 
         <div className="flex items-center gap-3">

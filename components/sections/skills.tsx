@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { motion } from 'framer-motion';
 import {
@@ -12,125 +12,89 @@ import {
   Layers,
   Cpu,
   Cloud,
+  Zap,
+  GitBranch,
+  Target,
+  Lightbulb,
+  Network,
 } from 'lucide-react';
-import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { SectionHeading } from '@/components/section-heading';
+import { Card } from '@/components/ui/card';
 
-type Skill = { name: string; level: number };
-type SkillGroup = {
+type SkillDomain = {
   title: string;
+  subtitle: string;
   icon: React.ComponentType<{ className?: string }>;
-  description: string;
   accent: string;
-  skills: Skill[];
+  iconColor: string;
+  featured: string[];
+  tags: string[];
 };
 
-const TOP_SKILLS = [
-  'Retrieval-Augmented Generation (RAG)',
-  'A2A (Agent-to-Agent)',
-  'ADK (Agent Development Kit)',
-  'Multi-Agent Systems',
-  'MCP Tools',
-  'Scalable AI Solutions',
-];
-
-const SKILL_GROUPS: SkillGroup[] = [
+const DOMAINS: SkillDomain[] = [
   {
-    title: 'GenAI & Agents',
+    title: 'GenAI & AI Systems',
+    subtitle: 'Primary focus area',
     icon: Brain,
-    description: 'LLM applications, retrieval, and agentic workflows',
     accent: 'from-fuchsia-500/20 to-purple-500/20',
-    skills: [
-      { name: 'Retrieval-Augmented Generation', level: 95 },
-      { name: 'Multi-Agent Systems', level: 90 },
-      { name: 'MCP (Model Context Protocol)', level: 88 },
-      { name: 'A2A & Agent Development Kit', level: 85 },
-      { name: 'Prompt Engineering', level: 90 },
-      { name: 'Vector Databases', level: 85 },
+    iconColor: 'text-fuchsia-400',
+    featured: [
+      'Retrieval-Augmented Generation (RAG)',
+      'Multi-Agent Orchestration (A2A)',
+      'Model Context Protocol (MCP)',
+      'LLM Evaluation & Guardrails',
+      'Vector Search & Embeddings',
     ],
+    tags: ['LangChain', 'LlamaIndex', 'Agents', 'Prompt Eng', 'Vector DB', 'FastAPI'],
   },
   {
-    title: 'Languages & Frameworks',
+    title: 'Python & Engineering',
+    subtitle: 'Core language — AI backends',
     icon: Code2,
-    description: 'Polyglot full-stack engineering',
     accent: 'from-blue-500/20 to-cyan-500/20',
-    skills: [
-      { name: 'JavaScript / TypeScript', level: 95 },
-      { name: 'Java', level: 92 },
-      { name: 'Python', level: 85 },
-      { name: 'React / Next.js', level: 90 },
-      { name: 'Node.js', level: 90 },
-      { name: 'Spring Boot', level: 85 },
+    iconColor: 'text-blue-400',
+    featured: [
+      'Python · FastAPI · LangChain',
+      'Java · Spring Boot',
+      'TypeScript · React / Next.js',
+      'Microservices & REST APIs',
+      'Cloud (AWS · GCP)',
     ],
+    tags: ['Python', 'Java', 'TypeScript', 'FastAPI', 'React', 'Spring Boot', 'AWS'],
   },
   {
-    title: 'Platform & Data',
-    icon: Server,
-    description: 'Enterprise systems, APIs, data pipelines',
-    accent: 'from-cyan-500/20 to-emerald-500/20',
-    skills: [
-      { name: 'Microservices Architecture', level: 90 },
-      { name: 'REST & GraphQL APIs', level: 92 },
-      { name: 'SQL & NoSQL Databases', level: 88 },
-      { name: 'Event-Driven Systems', level: 85 },
-      { name: 'CI/CD & DevOps', level: 82 },
-      { name: 'Cloud (AWS / GCP)', level: 80 },
-    ],
-  },
-  {
-    title: 'Leadership',
-    icon: Users,
-    description: 'From component lead to team lead',
+    title: 'Leadership & Strategy',
+    subtitle: 'Platform architecture & leadership',
+    icon: Target,
     accent: 'from-purple-500/20 to-fuchsia-500/20',
-    skills: [
-      { name: 'Team Leadership', level: 90 },
-      { name: 'Integration Lead', level: 92 },
-      { name: 'Component Ownership', level: 95 },
-      { name: 'Mentoring & Coaching', level: 88 },
-      { name: 'Cross-functional Collaboration', level: 90 },
-      { name: 'Technical Strategy', level: 85 },
+    iconColor: 'text-purple-400',
+    featured: [
+      'Platform Architecture & Vision',
+      'Engineering Standards Setting',
+      'Cross-team Technical Influence',
+      'Mentoring Senior Engineers',
+      'Integration Lead · Team Lead',
     ],
+    tags: ['Technical Strategy', 'Architecture', 'Standards', 'Mentoring', 'Delivery'],
   },
 ];
 
-const TECH_TAGS = [
-  { name: 'LLMs', icon: Brain },
-  { name: 'RAG', icon: Database },
-  { name: 'Agents', icon: Bot },
-  { name: 'MCP', icon: Wrench },
-  { name: 'LangChain', icon: Layers },
-  { name: 'Java', icon: Cpu },
-  { name: 'JavaScript', icon: Code2 },
-  { name: 'Spring Boot', icon: Server },
-  { name: 'React', icon: Code2 },
-  { name: 'Node.js', icon: Server },
-  { name: 'Python', icon: Code2 },
-  { name: 'AWS', icon: Cloud },
-  { name: 'Microservices', icon: Layers },
-  { name: 'REST APIs', icon: Server },
-  { name: 'Vector DB', icon: Database },
+const QUICK_CHIPS = [
+  { label: 'RAG', icon: Brain },
+  { label: 'Agents', icon: Bot },
+  { label: 'MCP', icon: Wrench },
+  { label: 'Python', icon: Code2 },
+  { label: 'LangChain', icon: Layers },
+  { label: 'Java', icon: Cpu },
+  { label: 'APIs', icon: Server },
+  { label: 'Microservices', icon: Network },
+  { label: 'Vector DB', icon: Database },
+  { label: 'CI/CD', icon: GitBranch },
+  { label: 'AWS', icon: Cloud },
+  { label: 'GenAI', icon: Zap },
+  { label: 'Platform', icon: Lightbulb },
+  { label: 'Leadership', icon: Users },
 ];
-
-function SkillBar({ skill, delay }: { skill: Skill; delay: number }) {
-  return (
-    <div>
-      <div className="mb-1.5 flex items-center justify-between text-sm">
-        <span className="font-medium text-foreground/90">{skill.name}</span>
-        <span className="text-xs text-muted-foreground">{skill.level}%</span>
-      </div>
-      <div className="h-1.5 w-full overflow-hidden rounded-full bg-white/[0.06]">
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ width: `${skill.level}%` }}
-          viewport={{ once: true, margin: '-40px' }}
-          transition={{ duration: 1.1, delay, ease: [0.16, 1, 0.3, 1] }}
-          className="h-full rounded-full bg-ai-gradient"
-        />
-      </div>
-    </div>
-  );
-}
 
 export function Skills() {
   return (
@@ -140,93 +104,94 @@ export function Skills() {
           eyebrow="Skills"
           title={
             <>
-              Built for <span className="text-gradient">AI at scale</span>
+              Platform &{' '}
+              <span className="text-gradient">AI Engineering</span>
             </>
           }
-          description="A blend of GenAI specialisation, full-stack depth, and the leadership chops to ship in regulated enterprise environments."
+          description="Enterprise AI platforms · Regulated banking systems · Architecture leadership"
         />
 
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.6 }}
-          className="mb-12"
-        >
-          <div className="mb-3 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-            Top Skills
-          </div>
-          <div className="flex flex-wrap justify-center gap-2">
-            {TOP_SKILLS.map((s) => (
-              <Badge key={s} variant="gradient" className="px-4 py-2 text-sm">
-                {s}
-              </Badge>
-            ))}
-          </div>
-        </motion.div>
+        {/* 3-column domain cards */}
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+          {DOMAINS.map((domain, di) => {
+            const Icon = domain.icon;
+            return (
+              <motion.div
+                key={domain.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-60px' }}
+                transition={{ duration: 0.55, delay: di * 0.1 }}
+              >
+                <Card className={`h-full bg-gradient-to-br p-6 ${domain.accent}`}>
+                  {/* Header */}
+                  <div className="mb-4 flex items-center gap-3">
+                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-black/20 ring-1 ring-white/10">
+                      <Icon className={`h-6 w-6 ${domain.iconColor}`} />
+                    </div>
+                    <div>
+                      <h3 className="font-display text-base font-semibold tracking-tight leading-tight">
+                        {domain.title}
+                      </h3>
+                      <p className="text-[11px] text-muted-foreground">{domain.subtitle}</p>
+                    </div>
+                  </div>
 
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {SKILL_GROUPS.map((group, gi) => (
-            <motion.div
-              key={group.title}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-60px' }}
-              transition={{ duration: 0.6, delay: gi * 0.08 }}
-            >
-              <Card className="h-full p-7">
-                <div className="mb-6 flex items-center gap-4">
-                  <div
-                    className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br ${group.accent} ring-1 ring-white/10`}
-                  >
-                    <group.icon className="h-6 w-6 text-white/90" />
+                  {/* Competency list */}
+                  <ul className="mb-4 space-y-1.5">
+                    {domain.featured.map((f) => (
+                      <li key={f} className="flex items-start gap-2 text-[13px] text-foreground/85">
+                        <span className="mt-1.5 h-1.5 w-1.5 flex-none rounded-full bg-ai-cyan" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Tag chips */}
+                  <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/[0.07]">
+                    {domain.tags.map((t) => (
+                      <span
+                        key={t}
+                        className="rounded-full bg-white/[0.06] px-2.5 py-0.5 text-[11px] font-medium text-foreground/70 border border-white/[0.08]"
+                      >
+                        {t}
+                      </span>
+                    ))}
                   </div>
-                  <div>
-                    <h3 className="font-display text-xl font-semibold tracking-tight">
-                      {group.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      {group.description}
-                    </p>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  {group.skills.map((skill, i) => (
-                    <SkillBar
-                      key={skill.name}
-                      skill={skill}
-                      delay={i * 0.06 + 0.1}
-                    />
-                  ))}
-                </div>
-              </Card>
-            </motion.div>
-          ))}
+                </Card>
+              </motion.div>
+            );
+          })}
         </div>
 
+        {/* Quick-scan chip cloud */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.6 }}
-          className="mt-12"
+          viewport={{ once: true, margin: '-40px' }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-10"
         >
-          <div className="mb-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+          <div className="mb-4 text-center text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
             Tech Stack
           </div>
           <div className="flex flex-wrap justify-center gap-2">
-            {TECH_TAGS.map((t) => (
-              <div
-                key={t.name}
-                className="group inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-foreground/80 transition-colors hover:border-white/25 hover:bg-white/[0.06]"
-              >
-                <t.icon className="h-3.5 w-3.5 text-ai-cyan transition-colors group-hover:text-ai-purple" />
-                {t.name}
-              </div>
-            ))}
+            {QUICK_CHIPS.map((c) => {
+              const CIcon = c.icon;
+              return (
+                <div
+                  key={c.label}
+                  className="group inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-foreground/75 transition-colors hover:border-white/25 hover:text-foreground"
+                >
+                  <CIcon className="h-3.5 w-3.5 text-ai-cyan group-hover:text-ai-purple transition-colors" />
+                  {c.label}
+                </div>
+              );
+            })}
           </div>
         </motion.div>
       </div>
     </section>
   );
 }
+
