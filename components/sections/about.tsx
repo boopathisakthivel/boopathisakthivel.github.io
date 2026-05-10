@@ -16,7 +16,7 @@ const HIGHLIGHTS = [
   {
     icon: Building2,
     title: 'Financial Services Domain',
-    description: '14+ years in banking — resilient, auditable systems',
+    description: '8 years in banking (JPMC & Wells Fargo) · 6 years in commerce (Skava) — resilient, auditable systems',
     accent: 'from-blue-500/20 to-cyan-500/20',
     iconColor: 'text-blue-400',
   },
@@ -29,8 +29,8 @@ const HIGHLIGHTS = [
   },
   {
     icon: TrendingUp,
-    title: 'Architecture Leadership',
-    description: 'Platform scope: technical strategy, standards, and engineering enablement',
+    title: 'Product & Builder Mindset',
+    description: 'Bridging deep platform engineering with product thinking — designing systems developers and end-users actually want to use.',
     accent: 'from-purple-500/20 to-fuchsia-500/20',
     iconColor: 'text-purple-400',
   },
@@ -48,7 +48,7 @@ export function About() {
               <span className="text-gradient">AI systems depth</span>
             </>
           }
-          description="Lead Software Engineer with 14+ years of experience building enterprise platforms across banking, commerce, and AI systems. Currently focused on GenAI platform architecture and developer experience tooling — RAG integrations, multi-agent orchestration, MCP tooling, and AI-augmented SDLC workflows. Experience spans frontend systems, backend services, developer platforms, and GenAI architectures — with a strong focus on scalable design, regulated environments, and engineering enablement."
+          description="Lead Software Engineer with 14+ years of experience building enterprise platforms across banking, commerce, and AI systems. Currently focused on GenAI platform engineering and developer experience tooling — RAG integrations, multi-agent orchestration, MCP tooling, and AI-augmented SDLC workflows. Experience spans frontend systems, backend services, developer platforms, and GenAI systems — with a strong focus on scalable design, regulated environments, and engineering enablement."
         />
 
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
@@ -97,10 +97,17 @@ export function About() {
               </div>
 
               {/* Open to */}
-              <div className="mt-auto rounded-lg border border-fuchsia-500/20 bg-fuchsia-500/5 px-4 py-3">
-                <div className="text-[10px] uppercase tracking-widest text-fuchsia-400/70 mb-0.5">Open To</div>
-                <div className="font-display font-semibold text-gradient">Staff+ / Platform Architecture</div>
-                <div className="text-xs text-muted-foreground mt-0.5">Architecture ownership · Engineering enablement</div>
+              <div className="mt-auto rounded-lg border border-fuchsia-500/20 bg-fuchsia-500/5 px-4 py-3 space-y-2">
+                <div>
+                  <div className="text-[10px] uppercase tracking-widest text-fuchsia-400/70 mb-0.5">Career Plan</div>
+                  <div className="font-display font-semibold text-gradient">Staff+ · Principal Engineer · Architect</div>
+                  <div className="text-xs text-muted-foreground mt-0.5">Technical leadership · Platform architecture · Engineering enablement</div>
+                </div>
+                <div className="border-t border-fuchsia-500/15 pt-2">
+                  <div className="text-[10px] uppercase tracking-widest text-cyan-400/70 mb-0.5">Longer horizon</div>
+                  <div className="font-display text-sm font-semibold text-foreground/80">Building developer tools &amp; GenAI products</div>
+                  <div className="text-xs text-muted-foreground mt-0.5">Founder trajectory</div>
+                </div>
               </div>
             </Card>
           </motion.div>

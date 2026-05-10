@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils';
 const NAV_ITEMS: { label: string; href: string }[] = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Writing', href: '#writing' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Education', href: '#education' },

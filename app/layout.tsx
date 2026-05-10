@@ -21,28 +21,30 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Boopathi Sakthivel — AI Application Engineering | Principal Engineer',
+  title: 'Boopathi Sakthivel — AI Platform Engineering | Lead Software Engineer',
   description:
-    '14+ years building enterprise-grade software solutions. Specialising in RAG, multi-agent systems, MCP tools, and scalable AI applications across financial services.',
+    '14+ years building enterprise software across banking and commerce. Specialising in GenAI systems, RAG, multi-agent orchestration, and AI-augmented platform engineering.',
   keywords: [
     'Boopathi Sakthivel',
-    'Principal Engineer',
-    'AI Engineering',
+    'Lead Software Engineer',
+    'AI Platform Engineering',
+    'GenAI',
     'RAG',
     'Multi-Agent Systems',
     'MCP',
-    'GenAI',
     'Wells Fargo',
     'JPMorgan Chase',
     'Financial Services',
+    'Staff Engineer',
+    'Platform Architecture',
   ],
   authors: [{ name: 'Boopathi Sakthivel' }],
   creator: 'Boopathi Sakthivel',
   metadataBase: new URL('https://boopathisakthivel.github.io'),
   openGraph: {
-    title: 'Boopathi Sakthivel — AI Application Engineering',
+    title: 'Boopathi Sakthivel — AI Platform Engineering',
     description:
-      '14+ years building enterprise-grade software solutions. RAG, multi-agent systems, MCP tools, and scalable AI applications.',
+      '14+ years building enterprise software across banking and commerce. GenAI systems, RAG, multi-agent orchestration, and scalable AI platform patterns.',
     type: 'website',
     url: 'https://boopathisakthivel.github.io',
     siteName: 'Boopathi Sakthivel',
@@ -52,9 +54,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Boopathi Sakthivel — AI Application Engineering',
+    title: 'Boopathi Sakthivel — AI Platform Engineering',
     description:
-      'Principal Engineer (target) building RAG, multi-agent systems, and scalable AI for financial services.',
+      'Lead Software Engineer building GenAI systems, RAG platforms, and multi-agent workflows for financial services. Targeting Staff+ / Principal Engineering.',
   },
 };
 
