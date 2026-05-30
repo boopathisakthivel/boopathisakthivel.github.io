@@ -77,6 +77,21 @@ const DOMAINS: SkillDomain[] = [
     ],
     tags: ['Technical Strategy', 'Architecture', 'Standards', 'Mentoring', 'Delivery'],
   },
+  {
+    title: 'Product Engineering',
+    subtitle: 'Zero-to-one · Builder trajectory',
+    icon: Lightbulb,
+    accent: 'from-cyan-500/20 to-fuchsia-500/20',
+    iconColor: 'text-cyan-400',
+    featured: [
+      'Developer Experience (DX) Design',
+      'Internal tool adoption patterns',
+      'API-first product thinking',
+      'Build vs. buy technical strategy',
+      'Problem framing & user research',
+    ],
+    tags: ['Product Thinking', 'DX', 'Developer Tools', 'System Design', 'Strategy'],
+  },
 ];
 
 const QUICK_CHIPS = [
@@ -112,7 +127,7 @@ export function Skills() {
         />
 
         {/* 3-column domain cards */}
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {DOMAINS.map((domain, di) => {
             const Icon = domain.icon;
             return (

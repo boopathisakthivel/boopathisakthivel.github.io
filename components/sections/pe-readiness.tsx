@@ -6,8 +6,6 @@ import {
   Layers3,
   BrainCircuit,
   Users2,
-  Network,
-  ShieldCheck,
   CheckCircle2,
   TrendingUp,
   Zap,
@@ -30,7 +28,7 @@ const PILLARS: Pillar[] = [
     icon: Telescope,
     title: 'Technical Vision',
     evidence: 'Driving reusable GenAI platform patterns, engineering standards, and AI integration approaches across multiple engineering teams at Wells Fargo.',
-    status: 'Leading',
+    status: 'Proven',
     accent: 'from-fuchsia-500/15 to-purple-500/15',
     iconColor: 'text-fuchsia-400',
   },
@@ -53,26 +51,18 @@ const PILLARS: Pillar[] = [
   {
     icon: Users2,
     title: 'Team Amplification',
-    evidence: '6-year lead arc: Component Lead → Integration Lead → Team Lead at Skava. Mentoring senior engineers at Wells Fargo.',
+    evidence: '6-year lead arc: Component Lead → Integration Lead → Team Lead at Skava. Mentoring senior engineers and setting standards at Wells Fargo.',
     status: 'Proven',
     accent: 'from-cyan-500/15 to-emerald-500/15',
     iconColor: 'text-cyan-400',
   },
   {
-    icon: Network,
-    title: 'Cross-org Influence',
-    evidence: 'Set API contracts and integration patterns adopted across JPMorgan product, risk & compliance teams.',
-    status: 'Proven',
-    accent: 'from-emerald-500/15 to-teal-500/15',
-    iconColor: 'text-emerald-400',
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Regulated Delivery',
-    evidence: '6+ years shipping in JPMC & Wells Fargo — navigating compliance, audit, and security constraints at scale.',
-    status: 'Proven',
-    accent: 'from-teal-500/15 to-fuchsia-500/15',
-    iconColor: 'text-teal-400',
+    icon: Zap,
+    title: 'Product Sense',
+    evidence: 'Translating deep platform engineering into tools developers actually adopt — internal DX tooling, API-first design, and zero-to-one builder instinct.',
+    status: 'Advancing',
+    accent: 'from-fuchsia-500/15 to-cyan-500/15',
+    iconColor: 'text-fuchsia-300',
   },
 ];
 
@@ -89,7 +79,7 @@ const JOURNEY = [
   { year: '2018–20', label: 'Product Dev', sub: 'Cognizant' },
   { year: '2020–24', label: 'Senior Engineer', sub: 'JPMorgan Chase' },
   { year: '2024–Now', label: 'AI Platform Engineering', sub: 'Wells Fargo', current: true },
-  { year: 'Next', label: 'Platform Architecture Leadership', sub: 'Staff+ / Principal scope', target: true },
+  { year: '→ Now', label: 'Builder Mode', sub: 'GenAI × Enterprise', target: true },
 ];
 
 export function PeReadiness() {
@@ -97,14 +87,14 @@ export function PeReadiness() {
     <section id="pe-readiness" className="relative scroll-mt-20 py-24 sm:py-32">
       <div className="container">
         <SectionHeading
-          eyebrow="Engineering Leadership"
+          eyebrow="Engineering Philosophy"
           title={
             <>
-              Engineering{' '}
-              <span className="text-gradient">leadership map</span>
+              How I build —{' '}
+              <span className="text-gradient">and why it scales</span>
             </>
           }
-          description="14 years of deliberate progression across six platform engineering dimensions — with evidence at every level."
+          description="14 years of deliberate progression across platform engineering, AI systems, and cross-team influence — with evidence at every level. Now extending into builder and product space."
         />
 
         {/* Journey strip */}

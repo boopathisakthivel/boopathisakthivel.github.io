@@ -46,16 +46,16 @@ const ROLES: Role[] = [
     tags: ['Java', 'Spring Boot', 'Microservices', 'System Design', 'API Contracts', 'Reliability'],
   },
   {
-    company: 'Cognizant',
+    company: 'Cognizant · Client: Intuit',
     title: 'Associate — Product Developer',
     period: 'Sep 2018 — Dec 2019',
     location: 'India',
-    description: 'Full-stack delivery for enterprise clients; focused on quality and architecture.',
+    description: 'Full-stack product engineering for Intuit (TurboTax / QuickBooks ecosystem) via Cognizant — focused on feature delivery, quality, and architecture.',
     highlights: [
-      'Led full-stack feature delivery for global clients',
-      'Introduced code-review and quality practices',
+      'Led full-stack feature delivery on Intuit product workflows',
+      'Introduced code-review and quality practices across the team',
     ],
-    tags: ['Java', 'JavaScript', 'Full Stack', 'Enterprise', 'Architecture'],
+    tags: ['Java', 'JavaScript', 'Full Stack', 'Fintech', 'Product Engineering'],
   },
   {
     company: 'Skava',

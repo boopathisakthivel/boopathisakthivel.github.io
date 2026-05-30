@@ -46,7 +46,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
-            className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground sm:text-xl"
+            className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
             Enterprise AI Platform Engineering · GenAI Systems · RAG · Multi-Agent Workflows
           </motion.p>
@@ -55,9 +55,18 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35 }}
-            className="mt-4 font-display text-xl font-medium text-foreground/90 sm:text-2xl"
+            className="mt-4 font-display text-lg font-medium text-foreground/90 sm:text-xl"
           >
-            14+ years of enterprise platform engineering — banking systems, GenAI architecture, and technical leadership
+            Designing the infrastructure that makes AI systems trustworthy at enterprise scale.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.42 }}
+            className="mt-2 text-sm text-muted-foreground/70"
+          >
+            14+ years · Banking · GenAI · Platform Architecture
           </motion.p>
 
           <motion.div
@@ -80,7 +89,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55 }}
-            className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
+            className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap"
           >
             <Button asChild size="lg">
               <a href="#projects">
@@ -88,13 +97,13 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="/resume/" target="_blank" rel="noreferrer">
-                <Download size={18} /> Download Resume
+              <a href="#writing">
+                <Sparkles size={18} /> Read My Thinking
               </a>
             </Button>
             <Button asChild variant="ghost" size="lg">
-              <a href="#contact">
-                <Mail size={18} /> Contact Me
+              <a href="/resume/" target="_blank" rel="noreferrer">
+                <Download size={18} /> Resume
               </a>
             </Button>
           </motion.div>
