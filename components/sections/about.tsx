@@ -48,7 +48,7 @@ export function About() {
               <span className="text-gradient">AI systems depth</span>
             </>
           }
-          description="Lead Software Engineer with 14+ years of experience building enterprise platforms across banking, commerce, and AI systems. Currently focused on GenAI platform engineering and developer experience tooling — RAG integrations, multi-agent orchestration, MCP tooling, and AI-augmented SDLC workflows. Experience spans frontend systems, backend services, developer platforms, and GenAI systems — with a strong focus on scalable design, regulated environments, and engineering enablement."
+          description="Lead Software Engineer with 14+ years of experience building enterprise platforms across banking, commerce, and AI systems. Currently focused on GenAI platform engineering and developer experience tooling — including RAG integrations, agent orchestration, and MCP tooling. Experienced in driving engineering standards, platform patterns, and reusable abstractions across teams, spanning leadership roles at Skava, product engineering at Intuit, and senior engineering at JPMorgan Chase."
         />
 
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">

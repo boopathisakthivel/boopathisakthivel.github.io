@@ -56,11 +56,8 @@ export default function ResumePage() {
           <p className="text-gray-700">
             Lead Software Engineer with 14+ years of experience building enterprise platforms across banking, commerce, and AI systems.
             Currently focused on GenAI platform engineering and developer experience tooling — including RAG integrations,
-            multi-agent orchestration, MCP tooling, and AI-augmented SDLC workflows. Prior experience spans six years of progression from
-            developer to team lead at Skava (e-commerce), product engineering at Intuit via Cognizant, senior engineering at JPMorgan Chase,
-            and early systems contributions dating to 2009.
-            Experienced across frontend, backend, platform engineering, and enterprise integration with strong focus on scalable design,
-            developer enablement, and regulated environments.
+            agent orchestration, and MCP tooling. Experienced in driving engineering standards, platform patterns, and reusable abstractions
+            across teams, spanning leadership roles at Skava, product engineering at Intuit, and senior engineering at JPMorgan Chase.
           </p>
         </section>
 
@@ -118,7 +115,6 @@ export default function ResumePage() {
                 'Owned system design and API contracts for high-throughput banking services supporting product, compliance, and risk workflows.',
                 'Defined data models and integration patterns adopted across multiple engineering teams; drove API governance and contract consistency.',
                 'Improved service reliability, observability, and operational resilience across distributed microservices.',
-                'Served as technical escalation for cross-team architecture and integration decisions in a global engineering organisation.',
               ]}
               tags={['Java', 'Spring Boot', 'Microservices', 'API Governance', 'System Design']}
           />
@@ -140,7 +136,7 @@ export default function ResumePage() {
             title="Lead Developer (Developer → Integration Lead → Team Lead)"
             company="Skava"
             period="Sep 2012 — Aug 2018"
-            location="Chennai, India"
+            location="Coimbatore, India"
             bullets={[
               'Six-year progression from Software Developer to Component Lead, Integration Lead, and Team Lead on a global e-commerce platform.',
               'Owned architecture and delivery of core commerce platform modules used by major global retail brands.',
