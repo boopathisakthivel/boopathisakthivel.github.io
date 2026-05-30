@@ -61,7 +61,7 @@ const ROLES: Role[] = [
     company: 'Skava',
     title: 'Lead Developer (Developer → Team Lead)',
     period: 'Sep 2012 — Aug 2018',
-    location: 'Chennai, India',
+    location: 'Coimbatore, India',
     description: '6-year progression on a global commerce platform — component & integration ownership.',
     highlights: [
       'Owned core commerce modules used by global retailers',
